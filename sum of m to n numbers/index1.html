@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>1st Number</p><input type="text" id="val1">
+    <p>2nd Number</p><input type="text" id="val2">
+    <button type="submit" onclick="myFunc()">Submit</button>
+    <p id="result"></p>
+
+
+    <script>
+        function myFunc(){
+        let x = document.getElementById("val1").value;
+        let x1 = parseInt(x);
+
+        let y = document.getElementById("val2").value;
+        let y1 = parseInt(y);
+
+            sum = 0
+            for(i = x1; i <= y1; i++){
+                sum = sum + i
+            }
+            document.getElementById("result").innerHTML = sum;
+        }    
+    </script>
+</body>
+</html>
